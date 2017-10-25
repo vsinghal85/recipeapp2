@@ -62,14 +62,6 @@ ActiveRecord::Schema.define(version: 20160716075129) do
     t.datetime "updated_at"
   end
 
-  create_table "reviews_tables", force: :cascade do |t|
-    t.text     "review"
-    t.integer  "chef_id"
-    t.integer  "recipe_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "styles", force: :cascade do |t|
     t.string "name"
   end
